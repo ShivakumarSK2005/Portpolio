@@ -470,7 +470,11 @@ export default function Home() {
           <div className="code-card">
             <div className="code-header">
               <span>developer.ts</span>
-              <span>● ● ●</span>
+              <div className="mac-dots" aria-hidden="true">
+                <span className="mac-dot mac-red" />
+                <span className="mac-dot mac-yellow" />
+                <span className="mac-dot mac-green" />
+              </div>
             </div>
 
             <pre suppressHydrationWarning>

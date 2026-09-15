@@ -350,10 +350,45 @@ a {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   font-family: monospace;
   font-size: 12px;
   color: #777;
+}
+
+.mac-dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.mac-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.code-card:hover .mac-dot {
+  opacity: 1;
+}
+
+.mac-red {
+  background-color: #ff5f56;
+  box-shadow: 0 0 6px rgba(255, 95, 86, 0.4);
+}
+
+.mac-yellow {
+  background-color: #ffbd2e;
+  box-shadow: 0 0 6px rgba(255, 189, 46, 0.4);
+}
+
+.mac-green {
+  background-color: #27c93f;
+  box-shadow: 0 0 6px rgba(39, 201, 63, 0.4);
 }
 
 .code-card pre {
