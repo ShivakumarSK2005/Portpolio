@@ -396,12 +396,12 @@ export default function Home() {
           <span>Kokatanur</span>
         </h1>
 
-        <h2>Full Stack Developer & Problem Solver</h2>
+        <h2>Full Stack Developer | C++ | Backend | AI/ML</h2>
 
         <p className="hero-description">
-          I build web applications, backend systems and intelligent software
-          solutions. I enjoy turning complex problems into simple, reliable
-          products.
+          Developer focused on building full-stack applications, backend
+          systems, and AI-driven solutions, with a strong foundation in C++
+          and Data Structures & Algorithms.
         </p>
 
         <div className="hero-buttons">
