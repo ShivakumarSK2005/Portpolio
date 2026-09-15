@@ -304,11 +304,19 @@ export default function Home() {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="nav-container">
-          <a href="#" className="logo">
-            Home<span>_</span>
+          <a
+            href="#"
+            className="mobile-brand"
+            onClick={() => setMenuOpen(false)}
+          >
+            Home
           </a>
 
           <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+            <a href="#" onClick={() => setMenuOpen(false)}>
+              Home
+            </a>
+
             <a href="#about" onClick={() => setMenuOpen(false)}>
               About
             </a>
