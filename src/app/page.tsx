@@ -95,18 +95,28 @@ const projects = [
     number: "01",
     title: "DeepFake Detection",
     description:
-      "AI-based detection of manipulated audio and video using deep learning.",
+      "AI-based multimedia analysis system for detecting manipulated audio and video using deep learning.",
     portfolioDetails:
-      "Developed a deepfake detection system that analyzes both audio and video patterns using CNN/LSTM-based deep learning techniques to identify manipulated multimedia content.",
+      "Developed a deepfake detection pipeline that analyzes spatial, temporal, and frequency-domain characteristics of multimedia content. The system uses CNN-based visual feature extraction, LSTM-based temporal modeling, and spectrogram-based audio analysis to classify potentially manipulated media.",
     tech: ["Python", "TensorFlow", "OpenCV", "LSTM", "CNN"],
+    keyFeatures: [
+      "Video frame extraction and preprocessing",
+      "CNN-based spatial feature extraction",
+      "Temporal sequence analysis using LSTM",
+      "Audio preprocessing and spectrogram generation",
+      "Audio-video feature analysis",
+      "Deep learning-based classification",
+    ],
     allTech: [
       "Python",
       "TensorFlow",
       "Keras",
       "OpenCV",
       "Librosa",
-      "LSTM",
+      "NumPy",
       "CNN",
+      "LSTM",
+      "Deep Learning",
       "Spectrograms",
     ],
     github: "https://github.com/ShivakumarSK2005/Deep-Fake-Detection",
@@ -116,24 +126,41 @@ const projects = [
     number: "02",
     title: "URL Shortener",
     description:
-      "Full-stack URL shortening service with REST APIs and PostgreSQL persistence.",
+      "Cloud-native URL shortening platform built with microservices, containerization, caching, and automated CI/CD.",
     portfolioDetails:
-      "Built a full-stack URL shortening service with REST APIs, PostgreSQL persistence, unique short-link generation, and efficient URL redirection.",
-    tech: ["React", "Node.js", "Express", "PostgreSQL"],
-    allTech: [
-      "React",
+      "Designed and developed a cloud-native URL shortening system using separate authentication and URL services. The application uses PostgreSQL for persistent storage, Redis for caching, Nginx as an API gateway, and Docker/Kubernetes for containerized deployment and service orchestration.",
+    tech: [
       "Node.js",
       "Express.js",
       "PostgreSQL",
-      "REST API",
-      "JavaScript",
+      "Redis",
+      "Docker",
+      "Kubernetes",
     ],
-    futureFeatures: [
-      "Click analytics",
-      "Expiring URLs",
-      "Custom aliases",
-      "QR codes",
-      "Rate limiting",
+    keyFeatures: [
+      "Microservices-based architecture",
+      "Authentication and URL services",
+      "RESTful APIs",
+      "PostgreSQL persistent storage",
+      "Redis caching",
+      "Nginx API Gateway",
+      "Docker containerization",
+      "Kubernetes orchestration",
+      "GitHub Actions CI/CD",
+    ],
+    allTech: [
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Redis",
+      "Nginx",
+      "Docker",
+      "Docker Compose",
+      "Kubernetes",
+      "Minikube",
+      "GitHub Actions",
+      "REST APIs",
+      "Microservices Architecture",
     ],
     github: "https://github.com/ShivakumarSK2005/URL-Shortener",
     demo: "#",
@@ -142,17 +169,30 @@ const projects = [
     number: "03",
     title: "Skill Connect",
     description:
-      "Platform for discovering people based on skills, interests and goals.",
+      "Full-stack skill discovery platform that connects users based on shared skills, interests, and learning goals.",
     portfolioDetails:
-      "Developed a skill-matching platform that enables users to discover and connect with others based on shared skills, interests, and learning goals.",
-    tech: ["React", "Node.js", "Express", "PostgreSQL"],
+      "Developed a full-stack platform where users can create profiles, showcase their skills, discover relevant users, and build connections around shared interests and learning goals. Implemented REST APIs and database-driven user and skill management with a React-based frontend.",
+    tech: ["React", "Node.js", "Express.js", "PostgreSQL"],
+    keyFeatures: [
+      "User profile management",
+      "Skill and interest management",
+      "Skill-based user discovery",
+      "User connection workflow",
+      "RESTful backend APIs",
+      "Database-backed user and skill data",
+      "Responsive frontend interface",
+    ],
     allTech: [
       "React",
+      "JavaScript",
       "Node.js",
       "Express.js",
       "PostgreSQL",
-      "REST API",
-      "JavaScript",
+      "REST APIs",
+      "HTML",
+      "CSS",
+      "Git",
+      "GitHub",
     ],
     github: "https://github.com/ShivakumarSK2005/Skill-Connect-",
     demo: "#",
@@ -488,11 +528,11 @@ export default function Home() {
                   <div className="project-expanded-details">
                     <p className="project-full-desc">{project.portfolioDetails}</p>
 
-                    {project.futureFeatures && (
+                    {project.keyFeatures && (
                       <div className="project-features-block">
-                        <span className="features-label">Upcoming / Planned:</span>
+                        <span className="features-label">Key Features:</span>
                         <ul className="features-checklist">
-                          {project.futureFeatures.map((item) => (
+                          {project.keyFeatures.map((item) => (
                             <li key={item}>
                               <span className="check-mark">✓</span> {item}
                             </li>
