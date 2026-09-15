@@ -751,7 +751,10 @@ export default function Home() {
           Built with <span>Next.js</span> · Deployed on <span>Vercel</span>
         </p>
 
-        <p suppressHydrationWarning>© {new Date().getFullYear()} Shivakumar Kokatanur</p>
+        <p suppressHydrationWarning>
+          © {new Date().getFullYear()} Shivakumar Kokatanur · Last updated:{" "}
+          <span>September 16, 2026</span>
+        </p>
       </footer>
 
       {/* COMING SOON TOAST */}
