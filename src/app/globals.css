@@ -641,6 +641,10 @@ a {
 }
 
 .project-link-view {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   color: var(--green);
   font-family: monospace;
   font-size: 13px;
@@ -650,6 +654,72 @@ a {
 .project-link-view:hover {
   color: #fff;
   transform: translateX(3px);
+}
+
+.project-link-view.coming-soon {
+  color: #ffa116;
+}
+
+/* ---------------- TOAST NOTIFICATION ---------------- */
+.terminal-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: #0b0f14;
+  border: 1px solid var(--green);
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 255, 136, 0.2);
+  font-family: monospace;
+  font-size: 13px;
+  color: #fff;
+  animation: toastFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes toastFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 15px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.toast-dot {
+  color: var(--green);
+  font-size: 12px;
+  animation: pulse-dot 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: #777;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0 4px;
+  margin-left: 6px;
+  transition: color 0.15s;
+}
+
+.toast-close:hover {
+  color: #fff;
 }
 
 /* ---------------- RESEARCH ---------------- */

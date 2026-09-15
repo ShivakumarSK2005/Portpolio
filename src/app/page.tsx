@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 function GithubIcon() {
   return (
@@ -241,6 +241,23 @@ const techStack = [
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [expandedProject, setExpandedProject] = useState<string | null>(null);
+  const [comingSoonProject, setComingSoonProject] = useState<string | null>(null);
+  const [toast, setToast] = useState<string | null>(null);
+  const toastTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleViewProject = (title: string, projectNumber: string) => {
+    setComingSoonProject(projectNumber);
+    setToast(`${title} — Live demo coming soon!`);
+
+    if (toastTimerRef.current) {
+      clearTimeout(toastTimerRef.current);
+    }
+
+    toastTimerRef.current = setTimeout(() => {
+      setComingSoonProject(null);
+      setToast(null);
+    }, 3000);
+  };
 
   return (
     <main>
@@ -525,14 +542,17 @@ export default function Home() {
                     GitHub ↗
                   </a>
 
-                  <a
-                    href={project.demo}
-                    className="project-link-view"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    type="button"
+                    className={`project-link-view ${
+                      comingSoonProject === project.number ? "coming-soon" : ""
+                    }`}
+                    onClick={() => handleViewProject(project.title, project.number)}
                   >
-                    View Project →
-                  </a>
+                    {comingSoonProject === project.number
+                      ? "Coming Soon..."
+                      : "View Project →"}
+                  </button>
                 </div>
               </article>
             );
@@ -681,6 +701,22 @@ export default function Home() {
 
         <p suppressHydrationWarning>© {new Date().getFullYear()} Shivakumar Kokatanur</p>
       </footer>
+
+      {/* COMING SOON TOAST */}
+      {toast && (
+        <div className="terminal-toast" role="status">
+          <span className="toast-dot">●</span>
+          <span className="toast-text">{toast}</span>
+          <button
+            type="button"
+            className="toast-close"
+            onClick={() => setToast(null)}
+            aria-label="Dismiss notification"
+          >
+            ✕
+          </button>
+        </div>
+      )}
     </main>
   );
 }
