@@ -452,18 +452,21 @@ export default function Home() {
         <div className="about-grid">
           <div>
             <p>
-              I'm a Full Stack Developer with a strong foundation in C++, Data
-              Structures & Algorithms, backend development, and modern web
-              technologies. I enjoy building practical, user-focused applications
-              and understanding the systems behind them.
+              I'm a Full Stack Developer with a strong foundation in C++, OOP, SQL,
+              Data Structures &amp; Algorithms, and Computer Science fundamentals.
+              I focus on building practical, reliable software while developing a
+              deeper understanding of backend engineering, databases, and system
+              architecture.
             </p>
 
             <p>
-              I work with technologies like React, Next.js, Node.js, Express.js,
-              and PostgreSQL, while also exploring AI and Machine Learning
-              through projects such as DeepFake Detection and data-driven
-              research. I enjoy solving complex problems, learning new
-              technologies, and turning ideas into reliable, real-world software.
+              My experience includes React, Next.js, Node.js, Express.js, MySQL,
+              PostgreSQL, and MongoDB, along with hands-on work in Docker, Kubernetes,
+              Nginx, Redis, and cloud-native architectures. I also explore AI and
+              Machine Learning through deep learning projects and data-driven
+              research. I enjoy solving challenging problems, learning new
+              technologies, and turning ideas into well-engineered, real-world
+              solutions.
             </p>
           </div>
 
