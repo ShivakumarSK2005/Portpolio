@@ -195,7 +195,7 @@ const projects = [
       "GitHub",
     ],
     github: "https://github.com/ShivakumarSK2005/Skill-Connect-",
-    demo: "#",
+    demo: "https://skillconnect-frontend-dusky.vercel.app/",
   },
   {
     number: "04",
