@@ -163,7 +163,7 @@ const projects = [
       "Microservices Architecture",
     ],
     github: "https://github.com/ShivakumarSK2005/URL-Shortener",
-    demo: "#",
+    demo: "https://url-shortener-six-eosin.vercel.app/login",
   },
   {
     number: "03",
@@ -802,7 +802,7 @@ export default function Home() {
 
         <p suppressHydrationWarning>
           © {new Date().getFullYear()} Shivakumar Kokatanur · Last updated:{" "}
-          <span>September 16, 2026</span>
+          <span>September 26, 2026</span>
         </p>
       </footer>
 
