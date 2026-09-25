@@ -228,7 +228,7 @@ const projects = [
       "Git",
     ],
     github: "https://github.com/ShivakumarSK2005/Job-Application-Tracker",
-    demo: "#",
+    demo: "https://job-application-tracker-1-u5tn.onrender.com/",
   },
 ];
 
@@ -632,17 +632,28 @@ export default function Home() {
                     GitHub ↗
                   </a>
 
-                  <button
-                    type="button"
-                    className={`project-link-view ${
-                      comingSoonProject === project.number ? "coming-soon" : ""
-                    }`}
-                    onClick={() => handleViewProject(project.title, project.number)}
-                  >
-                    {comingSoonProject === project.number
-                      ? "Coming Soon..."
-                      : "View Project →"}
-                  </button>
+                  {project.demo && project.demo !== "#" ? (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link-view"
+                    >
+                      View Project ↗
+                    </a>
+                  ) : (
+                    <button
+                      type="button"
+                      className={`project-link-view ${
+                        comingSoonProject === project.number ? "coming-soon" : ""
+                      }`}
+                      onClick={() => handleViewProject(project.title, project.number)}
+                    >
+                      {comingSoonProject === project.number
+                        ? "Coming Soon..."
+                        : "View Project →"}
+                    </button>
+                  )}
                 </div>
               </article>
             );
