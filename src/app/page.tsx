@@ -276,19 +276,19 @@ const codeSnippet = [
 const techStack = [
   {
     category: "LANGUAGES",
-    skills: ["C++", "Java", "JavaScript", "Python", "SQL"],
+    skills: ["Java", "C++", "JavaScript", "Python", "SQL"],
   },
   {
     category: "FRONTEND",
-    skills: ["React", "Next.js", "HTML", "CSS"],
+    skills: ["React", "Next.js", "Tailwind CSS", "Vite", "HTML", "CSS"],
   },
   {
     category: "BACKEND",
-    skills: ["Spring Boot", "Node.js", "Express.js", "REST APIs"],
+    skills: ["Spring Boot", "Spring Security", "JWT", "Node.js", "Express.js", "REST APIs"],
   },
   {
     category: "DATABASES",
-    skills: ["PostgreSQL", "MySQL", "MongoDB"],
+    skills: ["MongoDB Atlas", "PostgreSQL", "MySQL", "Redis"],
   },
   {
     category: "AI / ML",
@@ -304,8 +304,8 @@ const techStack = [
     ],
   },
   {
-    category: "TOOLS",
-    skills: ["Git", "GitHub", "Docker", "Postman", "Vercel"],
+    category: "DEVOPS & CLOUD",
+    skills: ["Docker", "Render", "Vercel", "Git", "GitHub", "Maven", "Postman", "Kubernetes"],
   },
   {
     category: "CORE",
@@ -495,8 +495,8 @@ export default function Home() {
             </p>
 
             <p>
-              My experience includes React, Next.js, Node.js, Express.js, MySQL,
-              PostgreSQL, and MongoDB, along with hands-on work in Docker, Kubernetes,
+              My experience includes Spring Boot, React, Next.js, Node.js, Express.js, MySQL,
+              PostgreSQL, and MongoDB Atlas, along with hands-on work in Docker, Kubernetes,
               Nginx, Redis, and cloud-native architectures. I also explore AI and
               Machine Learning through deep learning projects and data-driven
               research. I enjoy solving challenging problems, learning new
