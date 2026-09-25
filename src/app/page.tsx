@@ -228,7 +228,7 @@ const projects = [
       "Git",
     ],
     github: "https://github.com/ShivakumarSK2005/Job-Application-Tracker",
-    demo: "https://job-application-tracker-1-u5tn.onrender.com/",
+    demo: "https://job-application-tracker-pi-drab.vercel.app/",
   },
 ];
 
