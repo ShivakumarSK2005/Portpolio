@@ -197,10 +197,43 @@ const projects = [
     github: "https://github.com/ShivakumarSK2005/Skill-Connect-",
     demo: "#",
   },
+  {
+    number: "04",
+    title: "Job Application & Interview Tracker",
+    description:
+      "Enterprise full-stack career application tracker built with Spring Boot 3, React, JWT auth, MongoDB Atlas, and multi-round interview workflow management.",
+    portfolioDetails:
+      "Designed and developed a production-ready application tracking suite featuring stateless JWT security, end-to-end stage pipeline lifecycle management (Applied, Assessment, Interview, Offer, Rejected), dynamic server-side pagination, real-time funnel conversion metrics, and dedicated technical interview round scheduling with feedback reflections.",
+    tech: ["Spring Boot", "React", "MongoDB Atlas", "JWT", "Docker", "Tailwind CSS"],
+    keyFeatures: [
+      "JWT-based Stateless Authentication & BCrypt encryption",
+      "End-to-End Application Lifecycle Management (Active & Past)",
+      "Dedicated Online Assessment (OA) scheduling & mistake reflections",
+      "Multi-round interview scheduling with interviewer logs and feedback",
+      "Dynamic search, filtering, server-side pagination, and pipeline analytics",
+      "Dockerized deployment on Render with cloud MongoDB Atlas",
+    ],
+    allTech: [
+      "Java 21",
+      "Spring Boot 3",
+      "Spring Security",
+      "JWT",
+      "MongoDB Atlas",
+      "React 18",
+      "Vite",
+      "Tailwind CSS",
+      "Docker",
+      "REST APIs",
+      "Render",
+      "Git",
+    ],
+    github: "https://github.com/ShivakumarSK2005/Job-Application-Tracker",
+    demo: "#",
+  },
 ];
 
 const research = {
-  number: "04",
+  number: "05",
   title: "Impact of Air Pollution on Neurodisorders",
   status: "Currently researching...",
   description:
@@ -230,8 +263,10 @@ const codeSnippet = [
   '',
   '  stack: [',
   '    "React",',
+  '    "Spring Boot",',
   '    "Node.js",',
-  '    "PostgreSQL"',
+  '    "PostgreSQL",',
+  '    "MongoDB"',
   '  ],',
   '',
   '  mindset: "Build. Learn. Improve."',
@@ -249,7 +284,7 @@ const techStack = [
   },
   {
     category: "BACKEND",
-    skills: ["Node.js", "Express.js", "REST APIs"],
+    skills: ["Spring Boot", "Node.js", "Express.js", "REST APIs"],
   },
   {
     category: "DATABASES",
